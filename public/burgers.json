@@ -1,0 +1,19 @@
+[{
+  "id": "1",
+  "name": "Black Rino",
+  "desc": "Pain artisanal // Steak du boucher // Cheddar mature // Salade Tomate Oignon // Sauce Rhino",
+  "price": "8",
+  "supp_double": "4"
+}, {
+  "id": "2",
+  "name": "Pink Rhino",
+  "desc": "Pain artisanal // Pavé de Saumon mariné au poivre de Timut // Roquette // Fenouil croquant // Sauce fromage blanc, aneth et citron confit",
+  "price": "9.5",
+  "supp_double": "4.5"
+}, {
+  "id": "3",
+  "name": "Black Deer",
+  "desc": "Pain artisanal // Steak du boucher // Vercorais // Batavia rouge Grenobloise // Sauce à la moutarde // Persil frais",
+  "price": "9.5",
+  "supp_double": "4.5"
+}]
