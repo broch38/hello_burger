@@ -1,3 +1,8 @@
+:root {
+  --orange:#f27113;
+  --box-shadow:0 2px 2px 0 rgba(0,0,0,0.14),0 1px 5px 0 rgba(0,0,0,0.12),0 3px 1px -2px rgba(0,0,0,0.2);
+}
+
 @font-face {
   font-family: 'robotoregular';
   src:url('fonts/Roboto-Regular-webfont.woff') format('woff');
@@ -55,7 +60,7 @@ td, th {
 }
 
 .burger {
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 1px 5px 0 rgba(0,0,0,0.12),0 3px 1px -2px rgba(0,0,0,0.2);
+  box-shadow: var(--box-shadow);
   position: relative;
   margin: .5rem 0 1rem 0;
   background-color: #fff;
@@ -106,10 +111,12 @@ td, th {
   width: 80px;
   height: 80px;
   display: inline-block;
+  transition: .2s ease-out;
+  box-shadow: 0 ;
 }
 .add-to-cart-container label span:after {
   content:attr(data-name);
-  background:#f27113;
+  background:var(--orange);
   color:#fff;
   position:absolute;
   font-size:15px;
@@ -125,7 +132,8 @@ td, th {
   animation-timing-function: ease-out;
   z-index:1;
   border-radius:2px;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 1px 5px 0 rgba(0,0,0,0.12),0 3px 1px -2px rgba(0,0,0,0.2);
+  box-shadow: var(--box-shadow);
+
   /*animation: tooltip 1 0.5s ease-out;*/
 }
 
@@ -144,7 +152,8 @@ td, th {
 
 .add-to-cart-container label input:checked + span:before {
   background: #222;
-  color: #f27113;
+  color: var(--orange);
+  box-shadow: var(--box-shadow);
 }
 
 .add-to-cart-container label input {
@@ -154,9 +163,9 @@ td, th {
 .btn {
   text-decoration: none;
   color: #fff;
-  background-color: #f27113;
+  background-color: var(--orange);
   text-align: center;
-  letter-spacing: .5px;
+  letter-spacing: 0.5px;
   transition: .2s ease-out;
   cursor: pointer;
   font-size: 1rem;
@@ -170,12 +179,12 @@ td, th {
   text-transform: uppercase;
   vertical-align: middle;
   -webkit-tap-highlight-color: transparent;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 1px 5px 0 rgba(0,0,0,0.12),0 3px 1px -2px rgba(0,0,0,0.2);
+  box-shadow: var(--box-shadow);
 }
 
 .btn:hover {
   background-color:#ef873c;
-  box-shadow: 0 2px 3px 0 rgba(0,0,0,0.14),0 1px 5px 0 rgba(0,0,0,0.12),0 3px 1px -2px rgba(0,0,0,0.2);
+  box-shadow: var(--box-shadow);
 }
 
 .btn.small { 
@@ -223,6 +232,6 @@ td, th {
   }
   to {
     opacity:0;
-    top:0px;
+    top:0;
   }
 }
